@@ -5,7 +5,7 @@ As a software engineer, I am committed to continuous learning and skill enhancem
 This web application is a website, generated through the Django framework, that is designed to show off all the various projects I've worked on while also introducing myself from a developer standpoint. The projects page has a search bar for anyone wanting to take a deep dive into my work, and each project is kept in a SQLite database. To start a test server, enter the first `portfolio` folder and run `python manage.py runserver` with the latest version of Python. After that, visit the `http://127.0.0.1:8000` website to see the first page of the web application.
 
 {Describe your purpose for writing this software.}
-I've created this web application to upload to my domain at `markcuizon.org` while also expanding my repertoire by learning yet another web application framework in Django. This also serves as a project to show off my other projects, a way to tie up all that I've done so far.
+I've created this web application to upload to my domain at `markcuizon.com` while also expanding my repertoire by learning yet another web application framework in Django. This also serves as a project to show off my other projects, a way to tie up all that I've done so far.
 
 [Software Demo Video](https://youtu.be/0UdHbnRJXP4)
 
