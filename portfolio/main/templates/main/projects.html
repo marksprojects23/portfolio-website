@@ -3,11 +3,26 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+        <title>My Projects</title>
     </head>
-    <form method="GET" action="">
-        <input type="text" name="q" placeholder="Search projects...">
-        <button type="submit">Search</button>
-      </form>
+    <body>
+        <h1>Projects</h1>
+        <form method="GET">
+            <input type="text" name="q" placeholder="Search projects..." value="{{ request.GET.q }}">
+            <button type="submit">Search</button>
+        </form>
+        
+        <ul>
+            {% for project in projects %}
+                <li>
+                    <h2>{{ project.title }}</h2>
+                    <p>{{ project.description }}</p>
+                </li>
+            {% empty %}
+                <li>No projects found.</li>
+            {% endfor %}
+        </ul>
+    </body>
 </html>
 
   

@@ -2,9 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Project(models.Model):
-    title = models.CharField(max_length=200)
-    description = models.TextField()
-    technologies = models.CharField(max_length=200)  # or ManyToMany if advanced
+    title = models.CharField(max_length=200)        # Searchable title  
+    description = models.TextField()                # Searchable description
+    technologies = models.CharField(max_length=200) # or ManyToMany if advanced. Searchable technologies
     # image = models.ImageField(upload_to='project_images/', null=True, blank=True)
     # created_date = models.DateField(auto_now_add=True)
     # etc.
