@@ -3,10 +3,35 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
-        <title>Mark Cuizon - Portfolio</title>
-    </head>
-    <body>
-        <h1>Welcome to Mark Cuizon's Portfolio</h1>
-        <p>SOC Analyst & Developer</p>
-    </body>
-</html>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mark Cuizon - Portfolio</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+            <!-- HERO SECTION -->
+            <section class="flex flex-col items-center justify-center h-screen text-center px-6">
+                <img src="{% static 'main/29594791_1750754321614203_8930191331434707527_n.jpg' %}" class="w-32 h-32 rounded-full shadow-md mb-4">
+                <h1 class="text-5xl font-bold mb-4">Mark Cuizon</h1>
+                <p class="text-lg text-white-600 mb-6">Cybersecurity Analyst & Developer</p>
+                <div class="flex space-x-4">
+                    <a href="/projects" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition">
+                        View My Work
+                    </a>
+                    <a href="https://github.com/marksprojects23/" class="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-900 transition">
+                        GitHub
+                    </a>
+                </div>
+            </section>
+        
+            <!-- ABOUT ME SECTION -->
+            <section class="max-w-3xl mx-auto text-center py-12 px-6">
+                <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+                <p class="text-white-600 leading-relaxed">
+                    I'm a cybersecurity analyst and developer with a passion for building secure and efficient software.
+                    My experience spans across security engineering, full-stack development, and automation.
+                </p>
+            </section>
+        
+        </body>
+        </html>
+        
