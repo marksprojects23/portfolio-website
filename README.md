@@ -7,27 +7,37 @@ This web application is a website, generated through the Django framework, that 
 {Describe your purpose for writing this software.}
 I've created this web application to upload to my domain at `markcuizon.org` while also expanding my repertoire by learning yet another web application framework in Django. This also serves as a project to show off my other projects, a way to tie up all that I've done so far.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/0UdHbnRJXP4)
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+The Home/Index page is a simple introduction page to myself as a developer. There are two buttons on the page: One directs the user to my Projects page and the other directly links to my GitHub. With Django views, the HTML for these pages are loaded in.
+
+My Projects page's header title is clickable to bring the user back to the Home/Index page. The projects I've worked on are listed below with the latest project submitted being at the top. Each alternating project has the image (and, soon, the titles and descriptions too) aligned on the right. The search bar can restrict the project list to only those containing the query in the title and description but also the `technologies`, which are hidden tags where I put the languages and technologies I've used to creathe the project. This page dynamically pulls and queries from a SQLite database built within Django.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+- **Visual Studio Code with extensions**: Main code editor, allowing for efficient coding, error-checking, and project management.
+- **ChatGPT**: Generative AI that is vastly helpful as a coding assistant and advisor.
+- **Internet**: Source for documentations and learning.
 
-{Describe the programming language that you used and any libraries.}
+### Language and Libraries
+
+- **Python 3.12.3**: The main language used to code this project. Very versatile and high-level.
+- **Django**: Python web framework that encourages rapid development and clean, pragmatic design.
+- **Hypertext Markup Language**: Used for the structure of the web pages themselves. Django Template Language was also integrated into the HTML.
+- **Cascading Style Sheets**: Put in the `static` folder and keeps elements in both pages the same, such as the black background and white text.
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [ChatGPT](https://chat.openai.com/) - Coding Assistant.
+* [Django Documentation](https://docs.djangoproject.com/en/5.1/) - Main knowledge source for all Django concepts.
+* [YouTube](https://www.youtube.com/) - Fantastic source of free visual information.
+* [Stack Overflow](https://stackoverflow.com/) - For troubleshooting and finding solutions to coding problems.
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* JavaScript for dynamic search.
+* Tidying up the projects page for a more visually appealing look.
+* Upload to `markcuizon.com`.
